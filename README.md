@@ -1,2 +1,2 @@
-# Pyhton-CSGO-GSI
+# Python-CSGO-GSI
 Gamers first project
