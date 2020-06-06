@@ -1,7 +1,7 @@
 # Python-CSGO-GSI
 Gamers first project
 
-#How to use this;
+# How to use this;
 
 Hold X very shortly to swap the sides of the scores
 
