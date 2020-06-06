@@ -1,0 +1,57 @@
+
+#logoImage  {
+	position: absolute;
+	right:180px;
+	top:0px;
+	height:100px;
+
+}
+
+#Timer
+{
+	right: 49%;
+	font-size: 30px;
+	position: absolute;
+	text-align: center;
+	padding-top: 7px;
+}
+
+#Team1
+{
+	left: 27%;
+	position: absolute;
+	padding-top: 12px;
+}
+
+#Team2
+{
+	right: 27%;
+	position: absolute;
+	padding-top: 12px;
+}
+
+#Roundsplayed
+{
+	position: absolute;
+	right: 48.5%;
+	font-size: 20px;
+	padding-top: 42px;
+}
+
+#T1Score
+{
+	position: absolute;
+	right: 56%;
+	font-size: 35px;
+	padding-top: -120px;
+	top: 0.8%;
+}
+
+#T2Score
+{
+	position: absolute;
+	right: 42%;
+	font-size: 35px;
+	padding-top: -120px;
+	top: 0.8%;
+}
