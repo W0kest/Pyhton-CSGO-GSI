@@ -103,7 +103,7 @@ class Connection(object):
         response = ''
         while not response.endswith('\r\n'):
             tmp = self.socket.recv(4096).decode('utf-8')
-            if len(tmp) is 0: # socket closed
+            if len(tmp) == 0: # socket closed
                 self.socket=None
                 raise Exception('server connection lost')
             response += tmp

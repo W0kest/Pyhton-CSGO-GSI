@@ -1,0 +1,3 @@
+@ECHO OFF
+ECHO Starting scripts...
+python Run.py
