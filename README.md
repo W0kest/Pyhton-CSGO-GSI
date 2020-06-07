@@ -5,13 +5,13 @@ Gamers first project
 
 Use Start.bat to start the python scripts.
 
-Hold X very shortly to swap the sides of the scores
+Hold X shortly to swap the sides of the scores
 
 Hold C shortly to toggle visibility of the hud. Allowing it to run in the background / not go on screen instantly.
 
-Hold 1, through 4 to switch team names from the 1st team.
+Hold 1, through 4 shortly to switch team names from the 1st team.
 
-Hold 6 through 9 to switch team names from the 2nd team.
+Hold 6 through 9 shortly to switch team names from the 2nd team.
 
 They're in the following order:
 
