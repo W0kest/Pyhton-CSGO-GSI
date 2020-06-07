@@ -27,6 +27,9 @@ gameTime = 10
 
 planted = False
 
+team1 = "DYNASTY"
+team2 = "MCON ESPORTS"
+
 i = 0
 
 # amcp.connect.transact("clear 1")
@@ -63,20 +66,38 @@ while i != 1:
     elif keyboard.is_pressed('v') and visible == True:
         visible = False
 
+    if keyboard.is_pressed('1'):
+        team1 = "DYNASTY"
+    elif keyboard.is_pressed('2'):
+        team1 = "MCON ESPORTS"
+    elif keyboard.is_pressed('3'):
+        team1 = "4ELEMENTS"
+    elif keyboard.is_pressed('4'):
+        team1 = "ECV ESPORTS"
+
+    if keyboard.is_pressed('6'):
+        team2 = "DYNASTY"
+    elif keyboard.is_pressed('7'):
+        team2 = "MCON ESPORTS"
+    elif keyboard.is_pressed('8'):
+        team2 = "4ELEMENTS"
+    elif keyboard.is_pressed('9'):
+        team2 = "ECV ESPORTS"
+
     bombState = server.get_info("bomb", "state")
-    #print(server.get_info("bomb", "state"))
+    #print(server.get_info("bomb", "state"))vvvvvv
 
     if visible == False:
         amcp.connect.transact('clear 1-14')
         amcp.connect.transact('clear 1-15')
     elif uiSide == "Left":
         amcp.connect.transact(
-            r'CG 1-15 UPDATE 1 "<templateData><componentData id=\"f0\"><data id=\"text\" value=\"' + str(gameTime) + r'\"/></componentData><componentData id=\"f4\"><data id=\"text\" value=\"' + str(roundsPlayed) + r'/30\"/></componentData><componentData id=\"f5\"><data id=\"text\" value=\"' + str(
+            r'CG 1-15 UPDATE 1 "<templateData><componentData id=\"f0\"><data id=\"text\" value=\"' + str(gameTime) + r'\"/></componentData><componentData id=\"f1\"><data id=\"text\" value=\"' + team1 + r'\"/></componentData><componentData id=\"f2\"><data id=\"text\" value=\"' + team2 + r'\"/></componentData><componentData id=\"f4\"><data id=\"text\" value=\"' + str(roundsPlayed) + r'/30\"/></componentData><componentData id=\"f5\"><data id=\"text\" value=\"' + str(
                 tWins) + r'\"/></componentData><componentData id=\"f6\"><data id=\"text\" value=\"' + str(
                 ctWins) + r'\"/></componentData></templateData>"')
     elif uiSide == "Right":
         amcp.connect.transact(
-            r'CG 1-15 UPDATE 1 "<templateData><componentData id=\"f0\"><data id=\"text\" value=\"' + str(gameTime) + r'\"/></componentData><componentData id=\"f4\"><data id=\"text\" value=\"' + str(roundsPlayed) + r'/30\"/></componentData><componentData id=\"f5\"><data id=\"text\" value=\"' + str(
+            r'CG 1-15 UPDATE 1 "<templateData><componentData id=\"f0\"><data id=\"text\" value=\"' + str(gameTime) + r'\"/></componentData><componentData id=\"f1\"><data id=\"text\" value=\"' + team2 + r'\"/></componentData><componentData id=\"f2\"><data id=\"text\" value=\"' + team1 + r'\"/></componentData><componentData id=\"f4\"><data id=\"text\" value=\"' + str(roundsPlayed) + r'/30\"/></componentData><componentData id=\"f5\"><data id=\"text\" value=\"' + str(
                 ctWins) + r'\"/></componentData><componentData id=\"f6\"><data id=\"text\" value=\"' + str(
                 tWins) + r'\"/></componentData></templateData>"')
 
