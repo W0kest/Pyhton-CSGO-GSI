@@ -9,49 +9,60 @@
 
 #Timer
 {
-	right: 49%;
-	font-size: 30px;
-	position: absolute;
 	text-align: center;
-	padding-top: 7px;
+	left: 47%;
+	font-size: 30px;
+	top: -35px;
+	position: absolute;
+	align: center;
+	color: white;
 }
 
 #Team1
 {
-	left: 27%;
 	position: absolute;
+	text-align: center;
 	padding-top: 12px;
+	left: 28%;
+	color: white;
 }
 
 #Team2
 {
-	right: 27%;
+	text-align: center;
 	position: absolute;
 	padding-top: 12px;
+	right: 28%;
+	color: white;
 }
 
-#Roundsplayed
+#f0
 {
-	position: absolute;
-	right: 48.5%;
-	font-size: 20px;
-	padding-top: 42px;
+
 }
 
-#T1Score
+#f1
 {
-	position: absolute;
-	right: 56%;
-	font-size: 35px;
-	padding-top: -120px;
-	top: 0.8%;
+
 }
 
-#T2Score
+#SingleLine
 {
+	left: 230px;
+	top: 85px;
 	position: absolute;
-	right: 42%;
-	font-size: 35px;
-	padding-top: -120px;
-	top: 0.8%;
+}
+
+#DoubleLine
+{
+	left: 230px;
+	top: 70px;
+	position: absolute;
+}
+
+#TripleLine
+{
+	left: 230px;
+	top: 49px;
+	position: absolute;
 }
