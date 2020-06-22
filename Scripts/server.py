@@ -60,6 +60,7 @@ class RequestHandler(BaseHTTPRequestHandler):
             return False
         else:
             self.server.running = True
+            # print("auth_token matches.")
 
         self.server.parser.parse_payload(payload, self.server.gamestate)
 
